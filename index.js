@@ -14,7 +14,7 @@ const students = Array.from({ length: 100 }, (_, i) => ({
 }));
 
 // Endpoint to retrieve students above a threshold
-app.post('/students/above-threshold', (req, res) => {
+app.post('/students', (req, res) => {
   const { threshold } = req.body;
 
   // Validate input
